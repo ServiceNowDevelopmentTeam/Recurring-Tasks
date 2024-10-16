@@ -1,0 +1,2790 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>create_rctask_schedule</internal_name>
+        <label_cache>[{"name":"{{action.ritm}}","label":"action➛ritm","type":"action","ref":""},{"name":"{{action.ritm_sys_id}}","label":"action➛RITM Sys ID","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛name","type":"action","ref":""},{"name":"{{action.run_type}}","label":"action➛Run Type","type":"action","ref":""},{"name":"{{action.name1}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.run_start}}","label":"action➛Run Start","type":"action","ref":""},{"name":"{{action.run_period}}","label":"action➛Run Period","type":"action","ref":""},{"name":"{{action.run_time}}","label":"action➛Run Time","type":"action","ref":""},{"name":"{{action.template}}","label":"action➛template","type":"action","ref":""},{"name":"{{step[a0462eed-7b9d-423c-9a60-99f0a498a16c].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[a0462eed-7b9d-423c-9a60-99f0a498a16c].scheduled_task_sysid}}","label":"step➛Script step➛Scheduled Task SysId","type":"step","ref":""}]</label_cache>
+        <master_snapshot>e8dee0cf1b7f345062e50ed2cd4bcbca</master_snapshot>
+        <name>Create Scheduled Task</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-11 15:32:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>77303c451bb7381062e50ed2cd4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Scheduled Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_77303c451bb7381062e50ed2cd4bcb7f</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-09-01 16:28:02</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_element_mapping action="delete_multiple" query="id=77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>scheduled_task_sysid</field>
+        <id>77303c451bb7381062e50ed2cd4bcb7f</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:08</sys_created_on>
+        <sys_id>e6a130c71bbf345062e50ed2cd4bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:08</sys_updated_on>
+        <table>var__m_sys_hub_action_output_77303c451bb7381062e50ed2cd4bcb7f</table>
+        <value>{{step[a0462eed-7b9d-423c-9a60-99f0a498a16c].scheduled_task_sysid}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=77303c451bb7381062e50ed2cd4bcb7f^sys_idNOT IN31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</action>
+        <cid>a0462eed-7b9d-423c-9a60-99f0a498a16c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:05</sys_created_on>
+        <sys_id>31a130c71bbf345062e50ed2cd4bcb21</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:06</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>31a130c71bbf345062e50ed2cd4bcb21</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>0aa130c71bbf345062e50ed2cd4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <value/>
+        <variable display_value="">42a130c71bbf345062e50ed2cd4bcb5d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>31a130c71bbf345062e50ed2cd4bcb21</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>46a130c71bbf345062e50ed2cd4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <value/>
+        <variable display_value="">82a130c71bbf345062e50ed2cd4bcb58</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>31a130c71bbf345062e50ed2cd4bcb21</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>8ea130c71bbf345062e50ed2cd4bcb7a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:06</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var start = new GlideDateTime(inputs.runStart);
+  var duration = inputs.runPeriod;
+  var startTime = new GlideTime(new GlideDateTime(inputs.runTime).getTime());
+  gs.info('Run Time: ' + startTime.getValue());
+
+  var scheduledJobTools = new x_apig_recurring_t.ScheduledJobTools();
+  scheduledJobTools.initialize();
+  scheduledJobTools.setName(inputs.name);
+  scheduledJobTools.setActive('true');
+  scheduledJobTools.setRunStart(start);
+  scheduledJobTools.setRunPeriod(duration);
+  scheduledJobTools.setRunTime(startTime);
+  scheduledJobTools.setTemplate(inputs.template);
+  
+  var scheduleSysId = scheduledJobTools.insert();
+  outputs.scheduled_task_sysid = scheduleSysId;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>31a130c71bbf345062e50ed2cd4bcb21</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>c6a130c71bbf345062e50ed2cd4bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>31a130c71bbf345062e50ed2cd4bcb21</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>caa130c71bbf345062e50ed2cd4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <value/>
+        <variable display_value="">b1a130c71bbf345062e50ed2cd4bcb53</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>31a130c71bbf345062e50ed2cd4bcb21</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>8aa130c71bbf345062e50ed2cd4bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</table>
+        <value>{{action.name1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>runPeriod</field>
+        <id>31a130c71bbf345062e50ed2cd4bcb21</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>02a130c71bbf345062e50ed2cd4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</table>
+        <value>{{action.run_period}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>runStart</field>
+        <id>31a130c71bbf345062e50ed2cd4bcb21</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>c2a130c71bbf345062e50ed2cd4bcb7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</table>
+        <value>{{action.run_start}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>runTime</field>
+        <id>31a130c71bbf345062e50ed2cd4bcb21</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>4ea130c71bbf345062e50ed2cd4bcb7b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 21:02:36</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</table>
+        <value>{{action.run_time}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template</field>
+        <id>31a130c71bbf345062e50ed2cd4bcb21</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:50</sys_created_on>
+        <sys_id>3922a8571bbfb4508c5143f3cc4bcb80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:50</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</table>
+        <value>{{action.template}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_31a130c71bbf345062e50ed2cd4bcb21^id=31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=31a130c71bbf345062e50ed2cd4bcb21^sys_idNOT IN42a130c71bbf345062e50ed2cd4bcb5d,82a130c71bbf345062e50ed2cd4bcb58,b1a130c71bbf345062e50ed2cd4bcb53,e922a8571bbfb4508c5143f3cc4bcb72,f5a130c71bbf345062e50ed2cd4bcb4d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_time,uiTypeLabel=Time</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>runTime</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_time</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">31a130c71bbf345062e50ed2cd4bcb21</model>
+        <model_id>31a130c71bbf345062e50ed2cd4bcb21</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>42a130c71bbf345062e50ed2cd4bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_duration,uiTypeLabel=Duration</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>runPeriod</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_duration</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">31a130c71bbf345062e50ed2cd4bcb21</model>
+        <model_id>31a130c71bbf345062e50ed2cd4bcb21</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>82a130c71bbf345062e50ed2cd4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>runStart</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">31a130c71bbf345062e50ed2cd4bcb21</model>
+        <model_id>31a130c71bbf345062e50ed2cd4bcb21</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:05</sys_created_on>
+        <sys_id>b1a130c71bbf345062e50ed2cd4bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">31a130c71bbf345062e50ed2cd4bcb21</model>
+        <model_id>31a130c71bbf345062e50ed2cd4bcb21</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:50</sys_created_on>
+        <sys_id>e922a8571bbfb4508c5143f3cc4bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">31a130c71bbf345062e50ed2cd4bcb21</model>
+        <model_id>31a130c71bbf345062e50ed2cd4bcb21</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_31a130c71bbf345062e50ed2cd4bcb21</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:05</sys_created_on>
+        <sys_id>f5a130c71bbf345062e50ed2cd4bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=31a130c71bbf345062e50ed2cd4bcb21^sys_idNOT IN8aa130c71bbf345062e50ed2cd4bcb62"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=25ed3d9b-1cd2-4435-b184-2774b9ef6db1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scheduled_task_sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Scheduled Task SysId</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">31a130c71bbf345062e50ed2cd4bcb21</model>
+        <model_id>31a130c71bbf345062e50ed2cd4bcb21</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_31a130c71bbf345062e50ed2cd4bcb21</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>8aa130c71bbf345062e50ed2cd4bcb62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_31a130c71bbf345062e50ed2cd4bcb21"/>
+    <sys_hub_action_input action="delete_multiple" query="model=77303c451bb7381062e50ed2cd4bcb7f^sys_idNOT IN18deeccb1b7f345062e50ed2cd4bcb56,2ed3dea71b7f38508c5143f3cc4bcb58,58dee0cf1b7f345062e50ed2cd4bcba5,64dee0cf1b7f345062e50ed2cd4bcbb4,e522a8571bbfb4508c5143f3cc4bcb50"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=460c7601-eee9-46b9-ac3c-25d923c43a56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</model>
+        <model_id>77303c451bb7381062e50ed2cd4bcb7f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>18deeccb1b7f345062e50ed2cd4bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=18deeccb1b7f345062e50ed2cd4bcb56"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d00c3e87-7c2c-47fb-9bc9-47293c6eccdd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>run_period</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Run Period</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</model>
+        <model_id>77303c451bb7381062e50ed2cd4bcb7f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-19 17:12:05</sys_created_on>
+        <sys_id>2ed3dea71b7f38508c5143f3cc4bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:05</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2ed3dea71b7f38508c5143f3cc4bcb58"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=d0845216-06ba-406c-936f-d5449488e85a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>run_start</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Run Start</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</model>
+        <model_id>77303c451bb7381062e50ed2cd4bcb7f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>58dee0cf1b7f345062e50ed2cd4bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=58dee0cf1b7f345062e50ed2cd4bcba5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_time,uiTypeLabel=Time,uiUniqueId=8465afd0-550d-4f04-8eb2-8421a494201b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>run_time</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_time</internal_type>
+        <label>Run Time</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</model>
+        <model_id>77303c451bb7381062e50ed2cd4bcb7f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>64dee0cf1b7f345062e50ed2cd4bcbb4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=64dee0cf1b7f345062e50ed2cd4bcbb4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfa600e7-947f-411e-b3af-ebede01438c2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>template</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</model>
+        <model_id>77303c451bb7381062e50ed2cd4bcb7f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:49</sys_created_on>
+        <sys_id>e522a8571bbfb4508c5143f3cc4bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:49</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e522a8571bbfb4508c5143f3cc4bcb50"/>
+    <sys_hub_action_output action="delete_multiple" query="model=77303c451bb7381062e50ed2cd4bcb7f^sys_idNOT IN4ea130c71bbf345062e50ed2cd4bcb7f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=0d701ccc-aadf-4ee5-aced-a3cd7e579493</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scheduled_task_sysid</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Scheduled Task SysId</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</model>
+        <model_id>77303c451bb7381062e50ed2cd4bcb7f</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:06</sys_created_on>
+        <sys_id>4ea130c71bbf345062e50ed2cd4bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4ea130c71bbf345062e50ed2cd4bcb7f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4ea130c71bbf345062e50ed2cd4bcb7f"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f^sys_idNOT IN18dee0cf1b7f345062e50ed2cd4bcbab,24dee0cf1b7f345062e50ed2cd4bcbba,2922a8571bbfb4508c5143f3cc4bcb65,90dee0cf1b7f345062e50ed2cd4bcba4,a2d3dea71b7f38508c5143f3cc4bcb5f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>run_start</element>
+        <help/>
+        <hint/>
+        <label>Run Start</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>18dee0cf1b7f345062e50ed2cd4bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Start</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f_run_start_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>run_time</element>
+        <help/>
+        <hint/>
+        <label>Run Time</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>24dee0cf1b7f345062e50ed2cd4bcbba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Time</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f_run_time_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>template</element>
+        <help/>
+        <hint/>
+        <label>template</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:50</sys_created_on>
+        <sys_id>2922a8571bbfb4508c5143f3cc4bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>template</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f_template_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name1</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>90dee0cf1b7f345062e50ed2cd4bcba4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Name</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f_name1_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>run_period</element>
+        <help/>
+        <hint/>
+        <label>Run Period</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-19 17:12:05</sys_created_on>
+        <sys_id>a2d3dea71b7f38508c5143f3cc4bcb5f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Period</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f_run_period_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_77303c451bb7381062e50ed2cd4bcb7f^sys_idNOT IN2aa130c71bbf345062e50ed2cd4bcb86"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>scheduled_task_sysid</element>
+        <help/>
+        <hint/>
+        <label>Scheduled Task SysId</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_77303c451bb7381062e50ed2cd4bcb7f</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:08</sys_created_on>
+        <sys_id>2aa130c71bbf345062e50ed2cd4bcb86</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Task SysId</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_77303c451bb7381062e50ed2cd4bcb7f_scheduled_task_sysid_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_77303c451bb7381062e50ed2cd4bcb7f"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=77303c451bb7381062e50ed2cd4bcb7f^sys_idNOT IN30de24cf1b7f345062e50ed2cd4bcb1e"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"30de24cf1b7f345062e50ed2cd4bcb1e","name":"plan"}}</plan>
+        <snapshot>8fd312e71b7f38508c5143f3cc4bcb6f</snapshot>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30de24cf1b7f345062e50ed2cd4bcb1e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:08</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_scheduled_task</internal_name>
+        <label_cache>[{"name":"{{action.ritm}}","label":"action➛ritm","type":"action","ref":""},{"name":"{{action.ritm_sys_id}}","label":"action➛RITM Sys ID","type":"action","ref":""},{"name":"{{action.name}}","label":"action➛name","type":"action","ref":""},{"name":"{{action.run_type}}","label":"action➛Run Type","type":"action","ref":""},{"name":"{{action.name1}}","label":"action➛Name","type":"action","ref":""},{"name":"{{action.run_start}}","label":"action➛Run Start","type":"action","ref":""},{"name":"{{action.run_period}}","label":"action➛Run Period","type":"action","ref":""},{"name":"{{action.run_time}}","label":"action➛Run Time","type":"action","ref":""},{"name":"{{action.template}}","label":"action➛template","type":"action","ref":""},{"name":"{{step[a0462eed-7b9d-423c-9a60-99f0a498a16c].variable}}","label":"step➛Script step➛variable","type":"step","ref":""},{"name":"{{step[a0462eed-7b9d-423c-9a60-99f0a498a16c].scheduled_task_sysid}}","label":"step➛Script step➛Scheduled Task SysId","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Create Scheduled Task</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Create Scheduled Task">77303c451bb7381062e50ed2cd4bcb7f</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e8dee0cf1b7f345062e50ed2cd4bcbca</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:51</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_element_mapping action="delete_multiple" query="id=e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>scheduled_task_sysid</field>
+        <id>e8dee0cf1b7f345062e50ed2cd4bcbca</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:10</sys_created_on>
+        <sys_id>4fa170c71bbf345062e50ed2cd4bcbe7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_e8dee0cf1b7f345062e50ed2cd4bcbca</table>
+        <value>{{step[a0462eed-7b9d-423c-9a60-99f0a498a16c].scheduled_task_sysid}}</value>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=e8dee0cf1b7f345062e50ed2cd4bcbca^sys_idNOT INf6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</action>
+        <cid>a0462eed-7b9d-423c-9a60-99f0a498a16c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>f6a170c71bbf345062e50ed2cd4bcb1b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:07</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f6a170c71bbf345062e50ed2cd4bcb1b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>3aa170c71bbf345062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <value/>
+        <variable display_value="runPeriod">32a170c71bbf345062e50ed2cd4bcb39</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f6a170c71bbf345062e50ed2cd4bcb1b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>3ea170c71bbf345062e50ed2cd4bcb82</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:07</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var start = new GlideDateTime(inputs.runStart);
+  var duration = inputs.runPeriod;
+  var startTime = new GlideTime(new GlideDateTime(inputs.runTime).getTime());
+  gs.info('Run Time: ' + startTime.getValue());
+
+  var scheduledJobTools = new x_apig_recurring_t.ScheduledJobTools();
+  scheduledJobTools.initialize();
+  scheduledJobTools.setName(inputs.name);
+  scheduledJobTools.setActive('true');
+  scheduledJobTools.setRunStart(start);
+  scheduledJobTools.setRunPeriod(duration);
+  scheduledJobTools.setRunTime(startTime);
+  scheduledJobTools.setTemplate(inputs.template);
+  
+  var scheduleSysId = scheduledJobTools.insert();
+  outputs.scheduled_task_sysid = scheduleSysId;
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f6a170c71bbf345062e50ed2cd4bcb1b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>7aa170c71bbf345062e50ed2cd4bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f6a170c71bbf345062e50ed2cd4bcb1b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>bea170c71bbf345062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <value/>
+        <variable display_value="runStart">f6a170c71bbf345062e50ed2cd4bcb32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f6a170c71bbf345062e50ed2cd4bcb1b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>faa170c71bbf345062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <value/>
+        <variable display_value="runTime">7ea170c71bbf345062e50ed2cd4bcb64</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>name</field>
+        <id>f6a170c71bbf345062e50ed2cd4bcb1b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>b6a170c71bbf345062e50ed2cd4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</table>
+        <value>{{action.name1}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>runPeriod</field>
+        <id>f6a170c71bbf345062e50ed2cd4bcb1b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>3ea170c71bbf345062e50ed2cd4bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</table>
+        <value>{{action.run_period}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>runStart</field>
+        <id>f6a170c71bbf345062e50ed2cd4bcb1b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>b6a170c71bbf345062e50ed2cd4bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</table>
+        <value>{{action.run_start}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>runTime</field>
+        <id>f6a170c71bbf345062e50ed2cd4bcb1b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>7aa170c71bbf345062e50ed2cd4bcb83</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 21:02:38</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</table>
+        <value>{{action.run_time}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template</field>
+        <id>f6a170c71bbf345062e50ed2cd4bcb1b</id>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:51</sys_created_on>
+        <sys_id>4e22a8571bbfb4508c5143f3cc4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:51</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</table>
+        <value>{{action.template}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f6a170c71bbf345062e50ed2cd4bcb1b^id=f6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=f6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f6a170c71bbf345062e50ed2cd4bcb1b^sys_idNOT IN32a170c71bbf345062e50ed2cd4bcb39,7ea170c71bbf345062e50ed2cd4bcb64,8222a8571bbfb4508c5143f3cc4bcbd8,f6a170c71bbf345062e50ed2cd4bcb32,fea170c71bbf345062e50ed2cd4bcb1e"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_duration,uiTypeLabel=Duration</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>runPeriod</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_duration</internal_type>
+        <label>runPeriod</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">f6a170c71bbf345062e50ed2cd4bcb1b</model>
+        <model_id>f6a170c71bbf345062e50ed2cd4bcb1b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>32a170c71bbf345062e50ed2cd4bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_time,uiTypeLabel=Time</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>runTime</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_time</internal_type>
+        <label>runTime</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">f6a170c71bbf345062e50ed2cd4bcb1b</model>
+        <model_id>f6a170c71bbf345062e50ed2cd4bcb1b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</name>
+        <next_element/>
+        <order>300</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>7ea170c71bbf345062e50ed2cd4bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>template</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f6a170c71bbf345062e50ed2cd4bcb1b</model>
+        <model_id>f6a170c71bbf345062e50ed2cd4bcb1b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</name>
+        <next_element/>
+        <order>400</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:51</sys_created_on>
+        <sys_id>8222a8571bbfb4508c5143f3cc4bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>runStart</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>runStart</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">f6a170c71bbf345062e50ed2cd4bcb1b</model>
+        <model_id>f6a170c71bbf345062e50ed2cd4bcb1b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>f6a170c71bbf345062e50ed2cd4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f6a170c71bbf345062e50ed2cd4bcb1b</model>
+        <model_id>f6a170c71bbf345062e50ed2cd4bcb1b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_f6a170c71bbf345062e50ed2cd4bcb1b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>fea170c71bbf345062e50ed2cd4bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f6a170c71bbf345062e50ed2cd4bcb1b^sys_idNOT IN76a170c71bbf345062e50ed2cd4bcb78"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=25ed3d9b-1cd2-4435-b184-2774b9ef6db1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scheduled_task_sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Scheduled Task SysId</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">f6a170c71bbf345062e50ed2cd4bcb1b</model>
+        <model_id>f6a170c71bbf345062e50ed2cd4bcb1b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f6a170c71bbf345062e50ed2cd4bcb1b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:09</sys_created_on>
+        <sys_id>76a170c71bbf345062e50ed2cd4bcb78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_f6a170c71bbf345062e50ed2cd4bcb1b"/>
+    <sys_hub_action_input action="delete_multiple" query="model=e8dee0cf1b7f345062e50ed2cd4bcbca^sys_idNOT IN8bd312e71b7f38508c5143f3cc4bcb40,8e22a8571bbfb4508c5143f3cc4bcbc5,a8dee0cf1b7f345062e50ed2cd4bcbe4,acdee0cf1b7f345062e50ed2cd4bcbd5,ecdee0cf1b7f345062e50ed2cd4bcbcd"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=d00c3e87-7c2c-47fb-9bc9-47293c6eccdd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>run_period</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Run Period</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</model>
+        <model_id>e8dee0cf1b7f345062e50ed2cd4bcbca</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-19 17:12:07</sys_created_on>
+        <sys_id>8bd312e71b7f38508c5143f3cc4bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8bd312e71b7f38508c5143f3cc4bcb40"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dfa600e7-947f-411e-b3af-ebede01438c2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>template</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</model>
+        <model_id>e8dee0cf1b7f345062e50ed2cd4bcbca</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:51</sys_created_on>
+        <sys_id>8e22a8571bbfb4508c5143f3cc4bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8e22a8571bbfb4508c5143f3cc4bcbc5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_time,uiTypeLabel=Time,uiUniqueId=8465afd0-550d-4f04-8eb2-8421a494201b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>run_time</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_time</internal_type>
+        <label>Run Time</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</model>
+        <model_id>e8dee0cf1b7f345062e50ed2cd4bcbca</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:43</sys_created_on>
+        <sys_id>a8dee0cf1b7f345062e50ed2cd4bcbe4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a8dee0cf1b7f345062e50ed2cd4bcbe4"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=glide_date_time,uiTypeLabel=Date/Time,uiUniqueId=d0845216-06ba-406c-936f-d5449488e85a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>run_start</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">glide_date_time</internal_type>
+        <label>Run Start</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</model>
+        <model_id>e8dee0cf1b7f345062e50ed2cd4bcbca</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:43</sys_created_on>
+        <sys_id>acdee0cf1b7f345062e50ed2cd4bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=acdee0cf1b7f345062e50ed2cd4bcbd5"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=460c7601-eee9-46b9-ac3c-25d923c43a56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>name1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Name</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</model>
+        <model_id>e8dee0cf1b7f345062e50ed2cd4bcbca</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:42</sys_created_on>
+        <sys_id>ecdee0cf1b7f345062e50ed2cd4bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=ecdee0cf1b7f345062e50ed2cd4bcbcd"/>
+    <sys_hub_action_output action="delete_multiple" query="model=e8dee0cf1b7f345062e50ed2cd4bcbca^sys_idNOT INfea170c71bbf345062e50ed2cd4bcb93"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=string,uiTypeLabel=String,uiUniqueId=0d701ccc-aadf-4ee5-aced-a3cd7e579493</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>scheduled_task_sysid</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Scheduled Task SysId</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Scheduled Task">e8dee0cf1b7f345062e50ed2cd4bcbca</model>
+        <model_id>e8dee0cf1b7f345062e50ed2cd4bcbca</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:10</sys_created_on>
+        <sys_id>fea170c71bbf345062e50ed2cd4bcb93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:10</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fea170c71bbf345062e50ed2cd4bcb93"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fea170c71bbf345062e50ed2cd4bcb93"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca^sys_idNOT IN4a22a8571bbfb4508c5143f3cc4bcbcb,68dee0cf1b7f345062e50ed2cd4bcbea,6cdee0cf1b7f345062e50ed2cd4bcbdb,cbd312e71b7f38508c5143f3cc4bcb46,e4dee0cf1b7f345062e50ed2cd4bcbd4"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>template</element>
+        <help/>
+        <hint/>
+        <label>template</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 14:16:51</sys_created_on>
+        <sys_id>4a22a8571bbfb4508c5143f3cc4bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>template</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca_template_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-18 14:16:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>run_time</element>
+        <help/>
+        <hint/>
+        <label>Run Time</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:43</sys_created_on>
+        <sys_id>68dee0cf1b7f345062e50ed2cd4bcbea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Time</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca_run_time_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>run_start</element>
+        <help/>
+        <hint/>
+        <label>Run Start</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:43</sys_created_on>
+        <sys_id>6cdee0cf1b7f345062e50ed2cd4bcbdb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Start</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca_run_start_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>run_period</element>
+        <help/>
+        <hint/>
+        <label>Run Period</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-19 17:12:07</sys_created_on>
+        <sys_id>cbd312e71b7f38508c5143f3cc4bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Run Period</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca_run_period_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-19 17:12:07</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>name1</element>
+        <help/>
+        <hint/>
+        <label>Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:33:43</sys_created_on>
+        <sys_id>e4dee0cf1b7f345062e50ed2cd4bcbd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Name</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca_name1_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:33:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_e8dee0cf1b7f345062e50ed2cd4bcbca^sys_idNOT INb6a170c71bbf345062e50ed2cd4bcb9a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>scheduled_task_sysid</element>
+        <help/>
+        <hint/>
+        <label>Scheduled Task SysId</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_e8dee0cf1b7f345062e50ed2cd4bcbca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 20:46:10</sys_created_on>
+        <sys_id>b6a170c71bbf345062e50ed2cd4bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Scheduled Task SysId</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_e8dee0cf1b7f345062e50ed2cd4bcbca_scheduled_task_sysid_en</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 20:46:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_e8dee0cf1b7f345062e50ed2cd4bcbca"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>77303c451bb7381062e50ed2cd4bcb7f</sys_id>
+        <latest_snapshot>e8dee0cf1b7f345062e50ed2cd4bcbca</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch10-hotfix1-08-16-2023_08-21-2023_1705.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

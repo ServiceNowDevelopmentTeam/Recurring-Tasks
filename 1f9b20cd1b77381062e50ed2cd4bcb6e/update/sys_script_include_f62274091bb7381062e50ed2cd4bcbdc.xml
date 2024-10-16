@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_apig_recurring_t.TemplateTools</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>TemplateTools</name>
+        <script><![CDATA[var TemplateTools = Class.create();
+
+TemplateTools.prototype = {
+    /**SNDOC
+	   @name initialize
+       @description Sets default values
+		_template = '';
+		_name = '';
+		_table = '';
+		_active = 'true';
+		_user = '';
+		_shortDescription = '';
+		_showOnTemplateBar = 'false';
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.initialize();
+     */
+    initialize: function() {
+		this._template = '';
+		this._name = '';
+		this._table = '';
+		this._active = 'true';
+		this._user = '';
+		this._shortDescription = '';
+		this._showOnTemplateBar = 'false';
+    },
+    /**SNDOC
+	   @name setValue
+       @description Sets the value for the specified field on the target table
+       @param {string} [fieldName] - Name of the field to set
+       @param {string} [fieldValue] - Value to set on the field
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setValue('short_description', 'Short description of target record');
+	   templateTools.setValue('assigned_to', 'usersysid');
+     */
+	setValue: function(fieldName,fieldValue) {
+		if(this._template != ''){
+			this._template += '^';
+		}
+		this._template += fieldName+'='+fieldValue;
+	},
+    /**SNDOC
+	   @name setName
+       @description Sets the name of the template
+       @param {string} [val] - Name to set on the template
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setName('Request Template');
+     */
+	setName: function(val){
+		this._name = val;
+	},
+    /**SNDOC
+	   @name setTable
+       @description Sets the target table of the template
+       @param {string} [val] - Table name to set on the template
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setTable('sc_req_item');
+     */
+	setTable: function(val){
+		this._table = val;
+	},
+    /**SNDOC
+	   @name setActive
+       @description Sets the active flag of the template
+       @param {string} [val] - Active value to set on the template (true/false string)
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setActive('true');
+     */
+	setActive: function(val){
+		this._active = val.toLowerCase();
+	},
+    /**SNDOC
+	   @name setUser
+       @description Sets the user allowed to use the template
+       @param {string} [val] - Sys ID of user allowed to use the template
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setUser('usersysid');
+     */
+	setUser: function(val){
+		this._user = val;
+	},
+    /**SNDOC
+	   @name setShortDescription
+       @description Sets the short description of the template
+       @param {string} [val] - Short description to set on the template
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setShortDescription('Template for RITM records');
+     */
+	setShortDescription: function(val){
+		this._shortDescription = val;
+	},
+    /**SNDOC
+	   @name setShowOnTemplateBar
+       @description Shows or hides the template on the template bar
+       @param {string} [val] - True or false, show = 'true' and hide = 'false'
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setShowOnTemplateBar('false');
+     */
+	setShowOnTemplateBar: function(val){
+		this._showOnTemplateBar = val.toLowerCase();
+	},
+    /**SNDOC
+	   @name insert
+       @description Inserts the template into the sys_template table based on values set
+       @returns {string} Sys ID of the record inserted into the table
+	   @example 
+	   var templateTools = new x_apig_recurring_t.TemplateTools();
+	   templateTools.setValue('short_description', 'Short description of target record');
+	   templateTools.setValue('assigned_to', 'usersysid');
+	   templateTools.setName('Request Template');
+	   templateTools.setTable('sc_req_item');
+	   templateTools.setActive('true');
+	   templateTools.setUser('usersysid');
+	   templateTools.setShortDescription('Template for RITM records');
+	   templateTools.setShowOnTemplateBar('false');
+	   templateTools.insert();
+     */
+	insert: function(){
+		var templateGr = new GlideRecord('sys_template');
+		templateGr.initialize();
+		templateGr.setValue('template',this._template);
+		templateGr.setValue('name',this._name);
+		templateGr.setValue('table',this._table);
+		templateGr.setValue('active',this._active);
+		templateGr.setValue('user',this._user);
+		templateGr.setValue('short_description',this._shortDescription);
+		templateGr.setValue('show_on_template_bar',this._showOnTemplateBar);
+		templateGr.insert();
+		return templateGr.getUniqueValue();
+	},
+    type: 'TemplateTools'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-11 15:40:37</sys_created_on>
+        <sys_id>f62274091bb7381062e50ed2cd4bcbdc</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>TemplateTools</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_script_include_f62274091bb7381062e50ed2cd4bcbdc</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 15:20:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

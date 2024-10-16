@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Template" section_id="b49423081b7b659062e50ed2cd4bcb61" sys_domain="global" table="sysauto_template" version="3" view="scheduled_job_templates">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template.table</element>
+            <position>0</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:43:20</sys_created_on>
+            <sys_id>dd75abc41b7b659062e50ed2cd4bcb77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Template" display_value="Template" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">b49423081b7b659062e50ed2cd4bcb61</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:43:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template.name</element>
+            <position>1</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:43:20</sys_created_on>
+            <sys_id>d575abc41b7b659062e50ed2cd4bcb78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Template" display_value="Template" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">b49423081b7b659062e50ed2cd4bcb61</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:43:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template.template</element>
+            <position>2</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:43:20</sys_created_on>
+            <sys_id>d975abc41b7b659062e50ed2cd4bcb78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Template" display_value="Template" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">b49423081b7b659062e50ed2cd4bcb61</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:43:20</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Template</caption>
+            <header>false</header>
+            <name>sysauto_template</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b49423081b7b659062e50ed2cd4bcb61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sysauto_template</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+            <sys_update_name>sys_ui_section_b49423081b7b659062e50ed2cd4bcb61</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:29</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Scheduled Job Templates" name="scheduled_job_templates">4e74abc41b7b659062e50ed2cd4bcb5c</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="4a7463081b7b659062e50ed2cd4bcb89" sys_domain="global" table="sysauto_template" version="3" view="scheduled_job_templates">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0674abc41b7b659062e50ed2cd4bcb61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <text>${gs.getMessage("sysauto_form.timezone")}</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>ce7463081b7b659062e50ed2cd4bcb8a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>1</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0a7463081b7b659062e50ed2cd4bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_scope</element>
+            <position>2</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0e7463081b7b659062e50ed2cd4bcb8b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>conditional</element>
+            <position>3</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>027463081b7b659062e50ed2cd4bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>0674abc41b7b659062e50ed2cd4bcb61</element>
+            <position>4</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>067463081b7b659062e50ed2cd4bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>run_type</element>
+            <position>5</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0a7463081b7b659062e50ed2cd4bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>run_dayofmonth</element>
+            <position>6</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0e7463081b7b659062e50ed2cd4bcb8c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>run_dayofweek</element>
+            <position>7</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>027463081b7b659062e50ed2cd4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>business_calendar</element>
+            <position>8</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>067463081b7b659062e50ed2cd4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>offset_type</element>
+            <position>9</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0a7463081b7b659062e50ed2cd4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>offset</element>
+            <position>10</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0e7463081b7b659062e50ed2cd4bcb8d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>11</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>027463081b7b659062e50ed2cd4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>run_time</element>
+            <position>12</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>067463081b7b659062e50ed2cd4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entered_time</element>
+            <position>13</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0a7463081b7b659062e50ed2cd4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>run_period</element>
+            <position>14</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0e7463081b7b659062e50ed2cd4bcb8e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>run_start</element>
+            <position>15</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>027463081b7b659062e50ed2cd4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>condition</element>
+            <position>16</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>067463081b7b659062e50ed2cd4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template</element>
+            <position>17</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_id>0a7463081b7b659062e50ed2cd4bcb8f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sysauto_template" sys_domain="global" view="4e74abc41b7b659062e50ed2cd4bcb5c">4a7463081b7b659062e50ed2cd4bcb89</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sysauto_template</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 14:39:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a7463081b7b659062e50ed2cd4bcb89</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sysauto_template</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+            <sys_update_name>sys_ui_section_4a7463081b7b659062e50ed2cd4bcb89</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 14:39:02</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Scheduled Job Templates" name="scheduled_job_templates">4e74abc41b7b659062e50ed2cd4bcb5c</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

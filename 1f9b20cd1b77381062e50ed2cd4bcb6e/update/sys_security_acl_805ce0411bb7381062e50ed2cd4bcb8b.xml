@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_apig_recurring_t_x_rc_task</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_apig_recurring_t_x_rc_task</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-11 15:14:55</sys_created_on>
+        <sys_id>805ce0411bb7381062e50ed2cd4bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_apig_recurring_t_x_rc_task</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_security_acl_805ce0411bb7381062e50ed2cd4bcb8b</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-11 15:14:55</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

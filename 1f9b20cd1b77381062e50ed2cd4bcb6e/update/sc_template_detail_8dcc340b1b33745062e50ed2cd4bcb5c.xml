@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_template_detail">
+    <sc_template_detail action="INSERT_OR_UPDATE">
+        <applies_to_multi_row_variable_set>false</applies_to_multi_row_variable_set>
+        <item_option_new display_value="User criteria granted access">0c74d0f673321010c84e2bb43cf6a722</item_option_new>
+        <mandatory>false</mandatory>
+        <readonly>false</readonly>
+        <restricted>false</restricted>
+        <set/>
+        <sys_class_name>sc_template_detail</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-17 21:34:39</sys_created_on>
+        <sys_id>8dcc340b1b33745062e50ed2cd4bcb5c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sc_template_detail_8dcc340b1b33745062e50ed2cd4bcb5c</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2021-11-17 21:36:42</sys_updated_on>
+        <template display_value="Basic Template - Requested For">739c7cc71b33745062e50ed2cd4bcbe1</template>
+        <value>d2d2e20557130300d873ac71ef94f9aa</value>
+    </sc_template_detail>
+</record_update>

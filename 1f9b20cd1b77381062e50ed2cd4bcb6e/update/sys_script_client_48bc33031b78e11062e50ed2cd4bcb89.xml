@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>additional_link</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Set Additional URL Display Value</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if(newValue.toString() != ''){
+		var relatedInstructionsLink = document.getElementById('x_apig_recurring_t_x_rc_task.additional_link_link');
+
+		try {
+			var url = g_form.getValue('additional_link').toString();
+			var domain = url.match(/^(?:http?s?:\/\/)?(?:http?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)/im)[1];
+			if (domain.includes("servicenow.com") || domain.includes("apigroup")) {
+				var ga = new GlideAjax('x_apig_recurring_t.RCTaskUtils');
+				ga.addParam('sysparm_name', 'getTaskShortDescription');
+				ga.addParam('sysparm_url', url);
+				ga.getXMLAnswer(function(answer) {
+					relatedInstructionsLink.innerHTML = answer || domain;
+				});
+			} else {
+				relatedInstructionsLink.innerHTML = domain;
+			}
+		} catch (error) {
+			relatedInstructionsLink.innerHTML = g_form.getLabelOf('additional_link');
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-02-08 20:58:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48bc33031b78e11062e50ed2cd4bcb89</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Set Additional URL Display Value</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_script_client_48bc33031b78e11062e50ed2cd4bcb89</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-02-20 16:09:48</sys_updated_on>
+        <table>x_apig_recurring_t_x_rc_task</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

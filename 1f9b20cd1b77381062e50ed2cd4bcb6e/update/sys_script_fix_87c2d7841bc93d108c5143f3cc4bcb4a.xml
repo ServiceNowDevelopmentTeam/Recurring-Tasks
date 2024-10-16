@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>Update Recurring Tasks from Import</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[var debugTemplateUpdates = [];
+var debugScheduledJobUpdates = [];
+
+var template = {
+    "active": "true",
+    "show_on_template_bar": "false",
+    "stand_alone": "false",
+    "name": "",
+    "sys_name": "",
+    "short_description": "",
+    "table": "x_apig_recurring_t_x_rc_task",
+    "user": "",
+    "template": "short_description=^description=^assignment_group=^sla_definition=^related_instructions=^additional_link=^u_approver_control_reviewer=^business_service=^u_sox_control=^assigned_to=^u_control_preparer=^EQ"
+};
+
+var runPeriodTypes = {
+    "Monthly": "30 00:00:00",
+    "Quarterly": "91 6:00:00",
+    "Semi-Annually": "182 12:00:00",
+    "Annually": "365 00:00:00",
+};
+
+var templateFieldMap = [
+    { "sourceField": "u_service", "targetField": "business_service", split: false,  referenceField: "name", type: "reference", table: "cmdb_ci_service", "coalesce": true },
+    { "sourceField": "u_assignment_group", "targetField": "assignment_group", referenceField: "name", type: "reference", table: "sys_user_group" },
+    { "sourceField": "u_control_owner", "targetField": "u_approver_control_reviewer", referenceField: "name", type: "reference", table: "sys_user" },
+    { "sourceField": "u_control_preparer", "targetField": "u_control_preparer", referenceField: "name", type: "reference", table: "sys_user" },
+    { "sourceField": "u_control_preparer", "targetField": "assigned_to", referenceField: "name", type: "reference", table: "sys_user" },
+    { "sourceField": "u_control_reference", "targetField": "u_sox_control", type: "string", "coalesce": true },
+    { "sourceField": "u_short_descri_ontrol_number_", "targetField": "short_description", type: "string" },
+    { "sourceField": "u_sla", "targetField": "sla_definition", split: true, splitValue: 0, type: "number" },
+    { "sourceField": "u_task_descrip__instructions_", "targetField": "description", type: "string" },
+];
+
+function getReferenceField(sourceField, fieldMap) {
+    var referenceGr = new GlideRecord(fieldMap.table);
+    var queryFieldValue = fieldMap.split ? sourceField.split(' ')[fieldMap.splitValue] : sourceField;
+    referenceGr.addQuery(fieldMap.referenceField, queryFieldValue);
+    referenceGr.query();
+    if (referenceGr.next()) {
+        return referenceGr.sys_id.toString();
+    }
+    return null;
+}
+
+function getFieldValue(sourceField, fieldMap) {
+    switch (fieldMap.type) {
+        case "reference":
+            return getReferenceField(sourceField, fieldMap);
+        case "string":
+            return sourceField;
+        case "number":
+            return sourceField.split(' ')[fieldMap.splitValue];
+        default:
+            return sourceField;
+    }
+}
+
+function getFormattedDuration(sourceGr, sourceField) {
+    var gduration = new GlideDuration(sourceGr[sourceField]);
+    return gduration.getByFormat("DD HH:mm:ss");
+}
+
+function checkForChanges(sourceGr, sourceField, targetValue) {
+    if (sourceField === 'run_period') {
+        var sourceValue = getFormattedDuration(sourceGr, sourceField);
+        return sourceValue !== targetValue;
+    }
+    return sourceGr[sourceField].toString() !== targetValue.toString();
+}
+
+function processExistingTemplate(target, source) {
+    var scheduledJob = new GlideRecord('sysauto_template');
+    var isNewSchedule = false;
+    var isScheduleUpdated = false;
+
+    scheduledJob.addQuery('template', target.sys_id.toString());
+    scheduledJob.query();
+    if (!scheduledJob.next()) {
+        scheduledJob.initialize();
+        isNewSchedule = true;
+    }
+
+    var jobDetails = {
+        "active": "true",
+        "template": target.sys_id.toString(),
+        "name": "Recurring Task - " + source.u_control_preparer + " - " + source.u_short_descri_ontrol_number_,
+        "run_type": source.u_control_frequency === "Monthly" ? "monthly" : "periodically",
+        "run_dayofmonth": 1,
+        "run_period": runPeriodTypes[source.u_control_frequency],
+        "run_start": source.u_requested_start_date.toString()
+    };
+
+    isScheduleUpdated = updateScheduledJob(scheduledJob, jobDetails, isNewSchedule);
+
+    if (isNewSchedule) {
+        scheduledJob.insert();
+        debugScheduledJobUpdates.push("Scheduled Job inserted: " + source.u_short_descri_ontrol_number_);
+    } else if (isScheduleUpdated) {
+        scheduledJob.update();
+        debugScheduledJobUpdates.push("Scheduled Job updated: " + scheduledJob.sys_id + " - " + scheduledJob.name);
+    } else {
+        debugScheduledJobUpdates.push("Scheduled Job unchanged: " + scheduledJob.sys_id + " - " + scheduledJob.name);
+    }
+}
+
+function updateScheduledJob(scheduledJob, jobDetails, isNewSchedule) {
+    var isScheduleUpdated = false;
+    for (var key in jobDetails) {
+        if (!isScheduleUpdated) {
+            if (key !== 'run_period' && key !== 'run_start' || jobDetails.run_type !== "monthly") {
+                isScheduleUpdated = checkForChanges(scheduledJob, key, jobDetails[key]);
+                if (isScheduleUpdated && !isNewSchedule) {
+                    debugScheduledJobUpdates.push("Field " + key + " has changed from " + scheduledJob[key] + " to " + jobDetails[key]);
+                }
+            }
+        }
+    }
+
+    scheduledJob.setValue("active", jobDetails.active);
+    scheduledJob.setValue("template", jobDetails.template);
+    scheduledJob.setValue("name", jobDetails.name);
+    scheduledJob.setValue("run_type", jobDetails.run_type);
+    if (jobDetails.run_type === "monthly") {
+        scheduledJob.setValue("run_dayofmonth", jobDetails.run_dayofmonth);
+    } else {
+        scheduledJob.setValue("run_period", jobDetails.run_period);
+        scheduledJob.setValue("run_start", jobDetails.run_start);
+    }
+
+    return isScheduleUpdated;
+}
+
+function updateTemplate(target, templateFieldValue, thisTemplate, source, isNewTemplate) {
+    target.active = thisTemplate.active;
+    target.show_on_template_bar = thisTemplate.show_on_template_bar;
+    target.stand_alone = thisTemplate.stand_alone;
+    target.name = "Recurring Task - " + source.u_control_preparer + " - " + source.u_short_descri_ontrol_number_;
+    target.sys_name = source.u_control_number;
+    target.short_description = source.u_short_descri_ontrol_number_;
+    target.table = thisTemplate.table;
+    target.template = templateFieldValue;
+
+    if (isNewTemplate) {
+        target.insert();
+        debugTemplateUpdates.push("Template inserted: " + source.u_control_number);
+        createNewSchedule(target, source);
+    } else {
+        if (target.template === templateFieldValue) {
+            debugTemplateUpdates.push("Template unchanged: " + target.sys_id + " - " + target.name);
+        } else {
+            target.update();
+            debugTemplateUpdates.push("Template updated: " + target.sys_id + " - " + target.name);
+        }
+    }
+}
+
+function createNewSchedule(target, source) {
+    var scheduledJob = new GlideRecord('sysauto_template');
+    scheduledJob.initialize();
+
+    var jobDetails = {
+        "active": "true",
+        "template": target.sys_id.toString(),
+        "name": "Recurring Task - " + source.u_control_preparer + " - " + source.u_short_descri_ontrol_number_,
+        "run_type": source.u_control_frequency === "Monthly" ? "monthly" : "periodically",
+        "run_dayofmonth": 1,
+        "run_period": runPeriodTypes[source.u_control_frequency],
+        "run_start": source.u_requested_start_date.toString()
+    };
+
+    for (var key in jobDetails) {
+        scheduledJob.setValue(key, jobDetails[key]);
+    }
+
+    scheduledJob.insert();
+    debugScheduledJobUpdates.push("New Schedule created for Template: " + target.sys_id);
+}
+
+function formatDescription(source) {
+    return "\n\n--Recurring Task Setup--" +
+        "\nFrequency: " + source.u_control_frequency +
+        "\nStarted " + source.u_requested_start_date +
+        "\nAssigned to " + (source.u_control_preparer || source.u_assignment_group);
+}
+
+var source = new GlideRecord('u_rctask_import');
+source.query();
+while (source.next()) {
+    var target = new GlideRecord('sys_template');
+    var isNewTemplate = false;
+    var templateFieldValues = [];
+    var thisTemplate = template;
+
+    templateFieldMap.forEach(function(fieldMap) {
+        if (fieldMap.coalesce) {
+            var fieldValue = getFieldValue(source[fieldMap.sourceField], fieldMap);
+            if (fieldValue) {
+                target.addQuery('template', 'CONTAINS', fieldValue);
+            }
+        }
+    });
+
+    target.query();
+    if (target.next()) {
+        processExistingTemplate(target, source);
+    } else {
+        isNewTemplate = true;
+        target.initialize();
+    }
+
+    templateFieldMap.forEach(function(fieldMap) {
+        var fieldString = getFieldValue(source[fieldMap.sourceField], fieldMap);
+        if (!gs.nil(fieldString)) {
+            if (fieldMap.targetField === 'description') {
+                fieldString += formatDescription(source);
+            }
+            templateFieldValues.push(fieldMap.targetField + "=" + fieldString);
+        }
+    });
+
+    updateTemplate(target, templateFieldValues.join('^') + "^EQ", thisTemplate, source, isNewTemplate);
+    source.deleteRecord();
+}
+
+gs.info("Debug Template Updates: " + debugTemplateUpdates.join("\n"));
+gs.info("Debug Scheduled Job Updates: " + debugScheduledJobUpdates.join("\n"));
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-08-29 16:40:54</sys_created_on>
+        <sys_id>87c2d7841bc93d108c5143f3cc4bcb4a</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>Update Recurring Tasks from Import</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_script_fix_87c2d7841bc93d108c5143f3cc4bcb4a</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2024-05-21 20:35:23</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

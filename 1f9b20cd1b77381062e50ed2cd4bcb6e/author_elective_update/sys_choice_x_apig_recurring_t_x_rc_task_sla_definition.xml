@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="sla_definition" table="x_apig_recurring_t_x_rc_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>sla_definition</element>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-11-19 19:52:21</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sla_definition</sys_name>
+            <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+            <sys_update_name>sys_choice_x_apig_recurring_t_x_rc_task_sla_definition</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2021-11-19 19:52:21</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-11-19 19:52:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2021-11-19 19:53:07</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-11-19 19:52:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2021-11-19 19:52:33</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-11-19 19:52:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2021-11-19 19:52:44</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-11-19 19:52:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2021-11-19 19:52:52</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2021-11-19 19:52:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2021-11-19 19:52:58</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-03-20 19:13:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-03-20 19:13:42</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>25 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>600</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-29 14:35:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-29 14:36:46</sys_updated_on>
+            <value>25</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>30 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>700</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-06 18:57:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-29 14:36:45</sys_updated_on>
+            <value>30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sla_definition</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>75 Day</label>
+            <language>en</language>
+            <name>x_apig_recurring_t_x_rc_task</name>
+            <sequence>800</sequence>
+            <synonyms/>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-29 14:35:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-29 14:35:31</sys_updated_on>
+            <value>75</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

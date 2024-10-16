@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="619adf481b3b659062e50ed2cd4bcb9f" sys_domain="global" table="sys_template" version="3" view="rctask_template_management">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>e99adf481b3b659062e50ed2cd4bcba0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>table</element>
+            <position>1</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>259adf481b3b659062e50ed2cd4bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>2</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>299adf481b3b659062e50ed2cd4bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>2d9adf481b3b659062e50ed2cd4bcba1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_scope</element>
+            <position>4</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>219adf481b3b659062e50ed2cd4bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_domain</element>
+            <position>5</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>259adf481b3b659062e50ed2cd4bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user</element>
+            <position>6</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>299adf481b3b659062e50ed2cd4bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>groups</element>
+            <position>7</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>2d9adf481b3b659062e50ed2cd4bcba2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>global</element>
+            <position>8</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>219adf481b3b659062e50ed2cd4bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>259adf481b3b659062e50ed2cd4bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>10</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>299adf481b3b659062e50ed2cd4bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>template</element>
+            <position>11</position>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_id>2d9adf481b3b659062e50ed2cd4bcba3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="sys_template" sys_domain="global" view="599a17081b3b659062e50ed2cd4bcba0">619adf481b3b659062e50ed2cd4bcb9f</sys_ui_section>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>sys_template</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Terry.Lillo</sys_created_by>
+            <sys_created_on>2023-06-28 13:55:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>619adf481b3b659062e50ed2cd4bcb9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_template</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+            <sys_update_name>sys_ui_section_619adf481b3b659062e50ed2cd4bcb9f</sys_update_name>
+            <sys_updated_by>Terry.Lillo</sys_updated_by>
+            <sys_updated_on>2023-06-28 13:55:50</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="RCTask Template Management" name="rctask_template_management">599a17081b3b659062e50ed2cd4bcba0</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

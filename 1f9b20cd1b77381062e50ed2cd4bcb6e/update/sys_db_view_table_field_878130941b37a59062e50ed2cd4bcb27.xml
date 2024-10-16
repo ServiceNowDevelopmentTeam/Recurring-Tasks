@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table_field">
+    <sys_db_view_table_field action="INSERT_OR_UPDATE">
+        <field>template</field>
+        <sys_class_name>sys_db_view_table_field</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-06-28 20:15:55</sys_created_on>
+        <sys_id>878130941b37a59062e50ed2cd4bcb27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>template</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_db_view_table_field_878130941b37a59062e50ed2cd4bcb27</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-06-28 20:15:55</sys_updated_on>
+        <table>sysauto_template</table>
+        <view_table display_value="sysauto_template">fae0b4541b37a59062e50ed2cd4bcb3b</view_table>
+    </sys_db_view_table_field>
+</record_update>

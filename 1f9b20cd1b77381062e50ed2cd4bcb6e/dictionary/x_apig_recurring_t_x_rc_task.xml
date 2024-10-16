@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="573ebe641bb281d0346ffd951a4bcb94" extends="task" label="Recurring Task" max_length="40" name="x_apig_recurring_t_x_rc_task" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional Link" max_length="1024" name="additional_link" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Related Instructions" max_length="1024" name="related_instructions" type="url"/>
+        <element choice="1" label="SLA Definition" max_length="40" name="sla_definition" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1 Day" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="2 Day" sequence="100" value="2"/>
+                <element inactive_on_update="false" label="3 Day" sequence="200" value="3"/>
+                <element inactive_on_update="false" label="4 Day" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="5 Day" sequence="400" value="5"/>
+                <element inactive_on_update="false" label="10 Day" sequence="500" value="10"/>
+                <element inactive_on_update="false" label="25 Day" sequence="600" value="25"/>
+                <element inactive_on_update="false" label="30 Day" sequence="700" value="30"/>
+                <element inactive_on_update="false" label="75 Day" sequence="800" value="75"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Approver (Control Reviewer)" max_length="32" name="u_approver_control_reviewer" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Control Preparer" max_length="32" name="u_control_preparer" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Sox Control" max_length="40" name="u_sox_control" type="string">
+            <choice>
+                <element inactive_on_update="false" label="CM01" sequence="0" value="CM01"/>
+                <element inactive_on_update="false" label="CM02" sequence="1" value="CM02"/>
+                <element inactive_on_update="false" label="CM05" sequence="2" value="CM05"/>
+                <element inactive_on_update="false" label="CM08" sequence="3" value="CM08"/>
+                <element inactive_on_update="false" label="CM11" sequence="4" value="CM11"/>
+                <element inactive_on_update="false" label="CM14" sequence="5" value="CM14"/>
+                <element inactive_on_update="false" label="CM15" sequence="6" value="CM15"/>
+                <element inactive_on_update="false" label="SEC01" sequence="7" value="SEC01"/>
+                <element inactive_on_update="false" label="SEC02" sequence="8" value="SEC02"/>
+                <element inactive_on_update="false" label="SEC03" sequence="9" value="SEC03"/>
+                <element inactive_on_update="false" label="SEC04" sequence="10" value="SEC04"/>
+                <element inactive_on_update="false" label="SEC05" sequence="11" value="SEC05"/>
+                <element inactive_on_update="false" label="SEC06" sequence="12" value="SEC06"/>
+                <element inactive_on_update="false" label="SEC07" sequence="13" value="SEC07"/>
+                <element inactive_on_update="false" label="SEC08" sequence="14" value="SEC08"/>
+                <element inactive_on_update="false" label="SEC10" sequence="15" value="SEC10"/>
+                <element inactive_on_update="false" label="SEC11" sequence="16" value="SEC11"/>
+                <element inactive_on_update="false" label="SEC13" sequence="17" value="SEC13"/>
+                <element inactive_on_update="false" label="SEC14" sequence="18" value="SEC14"/>
+                <element inactive_on_update="false" label="SEC17" sequence="19" value="SEC17"/>
+                <element inactive_on_update="false" label="SEC18" sequence="20" value="SEC18"/>
+                <element inactive_on_update="false" label="AFR50.02" sequence="21" value="AFR50.02"/>
+                <element inactive_on_update="false" label="OPS01" sequence="22" value="OPS01"/>
+                <element inactive_on_update="false" label="OPS02" sequence="23" value="OPS02"/>
+                <element inactive_on_update="false" label="OPS04" sequence="24" value="OPS04"/>
+                <element inactive_on_update="false" label="OPS06" sequence="25" value="OPS06"/>
+                <element inactive_on_update="false" label="OPS10" sequence="26" value="OPS10"/>
+                <element inactive_on_update="false" label="OPS11" sequence="27" value="OPS11"/>
+                <element inactive_on_update="false" label="SD01" sequence="28" value="SD01"/>
+            </choice>
+        </element>
+    </element>
+</database>

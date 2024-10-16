@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    var ga = new GlideAjax('sn_tcm_collab_hook.MSTeamsChatAjaxProcessor');
+    ga.addParam('sysparm_name', 'isLoggedInUserHasValidEmail');
+    ga.getXMLAnswer(function(answer) {
+        if (answer + '' == 'true') {
+            g_modal.sn_tcm_collab_hook.startMsTeamsChat({
+                title: getMessage("Start Microsoft Teams Chat"),
+                height: '450px',
+                size: 'lg',
+                confirmTitle: getMessage("Start Chat"),
+                cancelTitle: getMessage("Cancel"),
+                params: {
+                    table: g_form.getTableName(),
+                    sysId: g_form.getUniqueValue()
+                }
+            }).then(function(result) {
+                g_ui_scripts.getUIScript("sn_tcm_collab_hook.chatSwarmModalUtils").then(function(getChatSwarmModalUtilsWS) {
+                    getChatSwarmModalUtilsWS().MSTeamsOpenMultiUserChat({
+                        items: result.data.items,
+                        topicName: result.data.chatTitle,
+                        journalField: "work_notes",
+                        tableName: g_form.getTableName(),
+                        sysId: g_form.getUniqueValue(),
+                        initiatedBy: g_user.userID
+                    });
+                });
+            });
+        } else
+            getMessage("You do not have a valid email to start Microsoft Teams chat", function(msg) {
+                g_form.addErrorMessage(msg);
+            });
+    });
+}]]></client_script_v2>
+        <comments/>
+        <condition> new sn_tcm_collab_hook.MSTeamsChatUtil().canLaunchChat(current, 'itil,sn_request_write');</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Start Microsoft Teams Chat</name>
+        <onclick>initChatWithGroup()</onclick>
+        <order>110</order>
+        <script><![CDATA[function initChatWithGroup() {
+    ScriptLoader.getScripts('/sn_tcm_collab_hook.openChatSwarmModal.jsdbx', function() {
+        MSTeamsOpenUserChatModal();
+    });
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-07-11 13:18:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>faae861c878831906b4c21b9cebb35ed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Start Microsoft Teams Chat</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_ui_action_faae861c878831906b4c21b9cebb35ed</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-07-11 13:18:30</sys_updated_on>
+        <table>x_apig_recurring_t_x_rc_task</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

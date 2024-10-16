@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_apig_recurring_t.RCTaskUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>RCTaskUtils</name>
+        <script><![CDATA[/*
+
+RCTaskUtils is a ServiceNow client callable script include that provides utility functions related to task records.
+*/
+var RCTaskUtils = Class.create();
+RCTaskUtils.prototype =  Object.extendsObject(global.AbstractAjaxProcessor, {
+	/*
+ * Returns the short description of a task record identified by its URL.
+ * @param sysparm_url The URL of the task record.
+ * @returns The short description of the task record or an empty string if the record cannot be found.
+ */
+	getTaskShortDescription: function() {
+		var url = this.getParameter('sysparm_url');
+		var tableName = this._getTableNameFromURL(url);
+		if (!tableName) {
+			return url.match(/^(?:https?:\/\/)?(?:http?:\/\/)?([^\/?#]+)(?:[\/?#]|$)/i)[1];
+		}
+		var gr = new GlideRecord(tableName);
+		gr.addQuery("sys_id", this._getSysIDFromURL(url));
+		gr.query();
+		if (gr.next()) {
+			return gr.short_description.toString();
+		}
+		else {
+			var kbNumber = this._getKBFromURL(url).toString();
+			var KBgr = new GlideRecord('kb_knowledge');
+			KBgr.addQuery("number", kbNumber);
+			KBgr.query();
+			if(KBgr.next()){
+				return KBgr.short_description.toString();
+			}
+		}
+		return '';
+	},
+
+	/*
+ * Extracts the table name from a ServiceNow URL.
+ * @param url The ServiceNow URL.
+ * @returns The name of the table or an empty string if the URL cannot be parsed.
+ */
+	_getTableNameFromURL: function(url) {
+		var tableName = "";
+		var match;
+		match = url.match(/^http?s?\:\/\/.*\/(\w+)\.do\??(sysparm_article|sys_id)=(\w+)/i);
+		if (match && match[1]) {
+			tableName = match[1];
+			if(tableName === 'kb_view')
+				tableName = 'kb_knowledge';
+		}
+		var tableGr = new GlideRecord('sys_db_object');
+		tableGr.addQuery('name', tableName);
+		tableGr.query();
+		if (tableGr.next()) {
+			var parentTable = tableGr.super_class;
+			if (parentTable == 'task' || tableName == 'kb_knowledge') {
+				return tableName;
+			} else {
+				return "";
+			}
+		}
+		return tableName;
+	},
+
+	/*
+ * Extracts the sys_id from a ServiceNow URL.
+ * @param url The ServiceNow URL.
+ * @returns The sys_id or an empty string if it cannot be found.
+ */
+	_getSysIDFromURL: function(url) {
+		var sysID = "";
+		var match = url.match(/sys_id=(\w+)/i);
+		if (match && match[1]) {
+		}
+		else{
+			match = url.match(/sysparm_article=(\w+)/i); 
+		}
+		sysID = match[1] ? match[1] : '';
+		return sysID;
+	},
+
+	/*
+ * Extracts the knowledge base article number from a ServiceNow URL.
+ * @param url The ServiceNow URL.
+ * @returns The knowledge base article number or an empty string if it cannot be found.
+ */
+	_getKBFromURL: function(url) {
+		var sysID = "";
+		match = url.match(/sysparm_article=(\w+)/i);
+		if (match && match[1]) {
+			sysID = match[1];
+		}
+		return sysID;
+
+	},
+
+	type: 'RCTaskUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2023-02-07 22:09:33</sys_created_on>
+        <sys_id>20630b7e1bb8611062e50ed2cd4bcb6e</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name>RCTaskUtils</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>sys_script_include_20630b7e1bb8611062e50ed2cd4bcb6e</sys_update_name>
+        <sys_updated_by>Terry.Lillo</sys_updated_by>
+        <sys_updated_on>2023-03-14 14:47:16</sys_updated_on>
+    </sys_script_include>
+</record_update>

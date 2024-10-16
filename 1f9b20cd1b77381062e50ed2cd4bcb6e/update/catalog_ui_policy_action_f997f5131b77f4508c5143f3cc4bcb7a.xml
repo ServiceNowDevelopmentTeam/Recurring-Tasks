@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:f51d2a061b1fd010e7004229bc4bcbba</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>Terry.Lillo</sys_created_by>
+        <sys_created_on>2021-11-18 20:30:07</sys_created_on>
+        <sys_id>f997f5131b77f4508c5143f3cc4bcb7a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>the_user_i_am_looking_for_is_not_listed</sys_name>
+        <sys_package display_value="Recurring Tasks" source="x_apig_recurring_t">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Recurring Tasks">1f9b20cd1b77381062e50ed2cd4bcb6e</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_f997f5131b77f4508c5143f3cc4bcb7a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2021-11-18 20:38:42</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Hide Req For Variables">b597f5131b77f4508c5143f3cc4bcb75</ui_policy>
+        <variable>the_user_i_am_looking_for_is_not_listed</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>
